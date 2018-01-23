@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name = "viewport" content = "width = device-width, initial-scale = 1, 
+         maximum-scale = 1, minimum-scale = 1, user-scalable = no, minimal-ui" />
+      <meta name = "apple-mobile-web-app-capable" content = "yes" />
+      <meta name = "apple-mobile-web-app-status-bar-style" content = "black" />
+	  <link rel = "stylesheet" 
+         href = "https://cdnjs.cloudflare.com/ajax/libs/framework7/1.4.2/css/framework7.ios.min.css" />
+      <link rel = "stylesheet" 
+         href = "https://cdnjs.cloudflare.com/ajax/libs/framework7/1.4.2/css/framework7.ios.colors.min.css" />
+
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+  
+<div class = "navbar">
+    <div class = "navbar-inner">
+        <h3>Address</h3></br>
+	</div></br></br>
+</div>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 12.935308, lng: 77.517611};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBubZSXGVutt7kEP5aQ6tlCEyPmc0UEfVs&callback=initMap"
+  type="text/javascript"></script>
+    </script>
+  </body>
+  <h2># Near Goplam Arcade, Mysore Road Bengalur</h2>
+</html>

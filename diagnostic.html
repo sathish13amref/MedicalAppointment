@@ -1,0 +1,124 @@
+<html>
+
+
+<head><meta name = "viewport" content = "width = device-width, initial-scale = 1, 
+         maximum-scale = 1, minimum-scale = 1, user-scalable = no, minimal-ui" />
+      <meta name = "apple-mobile-web-app-capable" content = "yes" />
+      <meta name = "apple-mobile-web-app-status-bar-style" content = "black" />
+	  <link rel = "stylesheet" 
+         href = "https://cdnjs.cloudflare.com/ajax/libs/framework7/1.4.2/css/framework7.ios.min.css" />
+      <link rel = "stylesheet" 
+         href = "https://cdnjs.cloudflare.com/ajax/libs/framework7/1.4.2/css/framework7.ios.colors.min.css" />
+</head>
+
+<style>
+#p01 {
+    color: blue;
+	margin-left:40px;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+  
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.sub
+{
+	background-color: white;
+    color: black;
+    margin-left: 40px;
+	height:10px;
+	padding-top: 30px;
+    padding-right: 30px;
+	margin-top:50px;
+    padding-bottom: 20px;
+	text-align: center;
+    padding-left: 50px;
+    width:150px;
+    border: 2px solid #f44336;
+}
+
+select {
+
+  display: block;
+  padding: 10px 70px 10px 13px !important; 
+  max-width: 100%; height: auto !important; 
+  border: 1px solid #e3e3e3; border-radius: 3px; 
+  background: url("https://image.ibb.co/iMeAJv/selectbox_arrow.png") right center no-repeat;
+  background-color: #fff; color: #444444;
+  font-size: 12px;
+  line-height: 16px !important;
+  appearance: none;
+  /* this is must */ -webkit-appearance: none; 
+  -moz-appearance: none; } 
+
+Read more at: https://www.proy.info/style-select-dropdown-using-css/
+}
+
+</style>
+
+
+
+<body>
+<div class = "views">
+         <div class = "view view-main">
+            <div class = "pages">
+                <div data-page = "home" class = "page navbar-fixed">
+					<div class = "navbar">
+						<div class = "navbar-inner">
+                        <div class = "left"> </div>
+                        <div class = "center">Diagnostics</div>
+                        <div class = "right"> </div>
+                     </div>
+					</div>
+				<form id = "my-form" class = "list-block" method="post" action="actiondia.php" >
+					<div class = "page-content">
+						<ul>	
+							<li>
+								<div class = "item-content">
+									<div class = "item-inner">
+										<div class = "item-title label">Select doctors:
+										</div>
+										<div class = "item-input">
+											<select class="s1" name="servies">
+											<option value="Physician assistants">Physician assistants</option>
+											<option value="Nurse practitioners">Nurse practitioners</option>
+											<option value="Clinical nurse specialists">Clinical nurse specialists</option>
+											<option value="Clinical social workers">Clinical social workers</option>
+											<option value="Physical therapists">Physical therapists</option>
+  
+											</select>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+                              <div class = "item-content">
+                                 <div class = "item-inner">
+                                    <div class = "item-title label">Name</div>
+                                    <div class = "item-input">
+                                       <input type="datetime-local" name="bdaytime">
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+							
+
+						<input type="submit" class = "button button-fill button-round color-red form-to-json" value="Submit">
+					</div>
+				</form>
+			</div>
+        </div>
+    </div>
+</div>
+</form>
+</body>
+</html>
